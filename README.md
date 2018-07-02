@@ -4,7 +4,7 @@ This [Docker](https://www.docker.com) image can be used to test [Ansible](https:
 
 ## Supported tags
 
-* 8
+* latest
 * 9
 
 ## Usage
@@ -12,7 +12,7 @@ This [Docker](https://www.docker.com) image can be used to test [Ansible](https:
 Run the container as a daemon
 
 ```console
-docker run --cap-add SYS_ADMIN --detach --name debian-9 --rm --volume /sys/fs/cgroup:/sys/fs/cgroup:ro dhoppe/molecule-debian:9
+docker run --cap-add SYS_ADMIN --detach --name debian-9 --rm --volume /sys/fs/cgroup:/sys/fs/cgroup:ro dhoppe/molecule-debian-9
 ```
 
 Enter the container
