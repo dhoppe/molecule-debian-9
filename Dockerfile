@@ -10,7 +10,7 @@ RUN echo 'deb http://deb.debian.org/debian stretch-backports main' >> /etc/apt/s
 
 RUN apt-get update \
     && apt-get upgrade -y \
-    && apt-get install -y iproute2 systemd \
+    && apt-get install -y iproute2 netcat systemd \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
